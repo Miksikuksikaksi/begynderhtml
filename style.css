@@ -1,0 +1,113 @@
+/* ################# RESET ################# */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* ################# STICKY FOOTER - RYAN FAIT ################# */
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+	height: 155px; /* '.push' must be the same height as 'footer' */
+}
+
+/* ################# GENERAL ################# */
+/* sørger for at elementer der ikke skal fkloate bliver hvor dde er og ikke hopper op */
+.clear-floats:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+/* ################# TYPOGRAPHY ################# */
+body {
+	/* sætter alle fonte til Georgia */
+	font-family: Georgia, serif;
+}
+h1 {
+	font-size: 44px;
+	padding-bottom: 30px;
+	color: rgb(65, 74, 80);
+}
+h5 {
+	font-size: 22px;
+}
+p {
+	font-size: 18px;
+}
+a {
+	/* fjerner streg under links: */
+	text-decoration: none;
+}
+
+/* ################# HEADER ################# */
+header {
+	height: 60px;
+	background: rgb(65, 74, 80);
+	padding: 30px 0 10px 0;
+}
+header a {
+	font-size: 22px;
+	color: white;
+}
+nav {
+	width: 960px;
+	margin: 0 auto;
+}
+nav ul li {
+	/* fjerner bullet-points på li elementer: */
+	list-style: none;
+	/* lægger li elementerne side om side vandret: */
+	display: inline;
+	/* giver lidt luft tl højre for hver li element */
+	padding-right: 22px;
+}
+.logo p {
+	/* ekstremt sløset kode men lægger logo oppe til højre */
+	float: right;
+	color: white;
+	font-size: 82px;
+	margin-top: -70px;
+}
+
+/* ################# SECTION ################# */
+section {
+	/* lægger section i midten af siden med en bredde på 1024px */
+	width: 960px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+.images img {
+	/* lægger billederne ved siden af hinanden UDEN mellemrum!:  */
+	float: left;
+}
+
+/* ################# ARTICLE ################# */
+article {
+	padding-bottom: 30px;
+}
+a.read-more-link {
+	font-size: 18px;
+	color:#0da5fc;
+}
+
+/* ################# FOOTER ################# */
+footer {
+	background: rgb(65, 74, 80);
+	padding: 60px 0 0 0;
+	color: white;
+}
+.stay-in-center {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* ################# IMG, VIDEO & STUFF ################# */
